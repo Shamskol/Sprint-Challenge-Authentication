@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [x ] Create a forked copy of this project.
+- [ x] Add your _Team Lead_ as collaborator on Github.
+- [ x] Clone your forked version of the Repository.
+- [ x] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [ x] Implement the project on this Branch, committing changes regularly.
+- [x ] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -39,13 +39,22 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
+Sessions are used to enable a server to store information about a client that can then be used for a variety of purposes.  Furthermore such information is used  to persist authentication information so there is no need to re-enter credentials on every new request the client makes to the server.
 
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
 
+
+
+Bcrypt hashes passwords, meaning they are stored as long combinations of letters and numbers so hackers can't see the actual password.
+
 - [ ] What does bcrypt do to slow down attackers?
+Bcrypt increases iteration count, making the login process slower for brute force attackers. Implements time complexities to force the process to take exponentially more time, making it less and less worth it to bother.
+
 
 - [ ] What are the three parts of the JSON Web Token?
-
+The three parts are : (i)Header,
+                       (ii) Payload,
+                       (iii}Signature.
 ## Minimum Viable Product
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
